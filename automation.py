@@ -5,4 +5,6 @@ chrome_browser = webdriver.Chrome('/Users/jmichalek/Downloads/chromedriver')
 chrome_browser.maximize_window()
 chrome_browser.get('https://demo.seleniumeasy.com/basic-first-form-demo.html')
 
-print('Selenium Easy Demo - Simple Form to Automate using Selenium' in chrome_browser.title)
+assert 'Selenium Easy Demo' in chrome_browser.title
+button_text = chrome_browser.find_element_by_class_name('btn-default')
+print(button_text.get_attribute('innerHTML'))
