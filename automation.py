@@ -24,3 +24,5 @@ assert 'HELLO WORLD!!!' in output_message.text
 
 # Closes the browser after running the script (may also use .close()):
 chrome_browser.quit()
+
+# Use explicit wait so automation is not detected as a bot.
