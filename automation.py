@@ -21,3 +21,6 @@ show_message_button.click()
 output_message = chrome_browser.find_element_by_id('display')
 
 assert 'HELLO WORLD!!!' in output_message.text
+
+# Closes the browser after running the script (may also use .close()):
+chrome_browser.quit()
